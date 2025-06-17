@@ -1,0 +1,6 @@
+// 1.21.5	-999999999-01-01T00:00:00	Hedges/Tags for minecraft:block
+31f63b92823aa0e6a9e11601912fa9773692aee4 data/hedges/tags/block/hedges.json
+5a7b4a9d44f43abda29d3326ff0ffca772765a43 data/minecraft/tags/block/bee_attractive.json
+5a7b4a9d44f43abda29d3326ff0ffca772765a43 data/minecraft/tags/block/flowers.json
+478cdbfc930e5c2f1eea52315d9ba49247bde253 data/minecraft/tags/block/mineable/hoe.json
+478cdbfc930e5c2f1eea52315d9ba49247bde253 data/minecraft/tags/block/sword_efficient.json

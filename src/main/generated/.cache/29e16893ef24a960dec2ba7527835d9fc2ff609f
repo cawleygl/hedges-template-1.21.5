@@ -1,0 +1,4 @@
+// 1.21.5	-999999999-01-01T00:00:00	Hedges/Tags for minecraft:item
+31f63b92823aa0e6a9e11601912fa9773692aee4 data/hedges/tags/item/hedges.json
+5a7b4a9d44f43abda29d3326ff0ffca772765a43 data/minecraft/tags/item/bee_food.json
+5a7b4a9d44f43abda29d3326ff0ffca772765a43 data/minecraft/tags/item/flowers.json

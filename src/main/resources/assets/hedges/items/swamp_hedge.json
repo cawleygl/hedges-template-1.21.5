@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "hedges:block/swamp_hedge",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -7158200
+      }
+    ]
+  }
+}

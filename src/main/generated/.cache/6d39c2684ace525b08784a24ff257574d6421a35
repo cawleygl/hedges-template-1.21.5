@@ -1,0 +1,14 @@
+// 1.21.5	-999999999-01-01T00:00:00	Hedges/Block Loot Tables
+c5e0db1525fc201e0dd043b2265931c802949802 data/hedges/loot_table/blocks/acacia_hedge.json
+8ca5cde0ed4de6a5bae2f2b3e5691013b2e95457 data/hedges/loot_table/blocks/azalea_hedge.json
+bc404e31ae21b66a8e10e02f79cd2774ac50b8bd data/hedges/loot_table/blocks/birch_hedge.json
+0853aba6c0718438b9a56f1510b2245a71b5ecb1 data/hedges/loot_table/blocks/cherry_hedge.json
+bd050d7b921fa405886d74d61e91357ade672d16 data/hedges/loot_table/blocks/dark_oak_hedge.json
+5fe09047c12778a6a6bf65873f15f18715b03104 data/hedges/loot_table/blocks/flowering_azalea_hedge.json
+3ca9c8694476dc2fa6e2ab9949e3a1b2cd0c93d1 data/hedges/loot_table/blocks/jungle_hedge.json
+c8db7dde6a212df086a4b6d6133e967ee4f86b71 data/hedges/loot_table/blocks/mangrove_hedge.json
+759fa061e7e589e2a0cbf3e64a0e94e4ec8f4be1 data/hedges/loot_table/blocks/oak_hedge.json
+a6a32aff35030b3757a4893153daeb14842b06ce data/hedges/loot_table/blocks/pale_oak_hedge.json
+2324b9bb3fb0228bcb4df94181d62f1ed2727cd0 data/hedges/loot_table/blocks/pine_hedge.json
+05171bfa3856e96a0a6db60bcb5bfbc277c82285 data/hedges/loot_table/blocks/spruce_hedge.json
+5bd06122f05302e5fd636df023f39ddb57a4177c data/hedges/loot_table/blocks/swamp_hedge.json

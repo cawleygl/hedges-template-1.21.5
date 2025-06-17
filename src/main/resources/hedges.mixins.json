@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "bluesteel42.hedges.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+  		"EntityYPosOffsetMixin",
+		"PosAccessor",
+		"FenceGateOffsetMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "hedges:block/template_hedge_post",
+  "textures": {
+    "wall": "minecraft:block/cherry_leaves"
+  }
+}
