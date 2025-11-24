@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flowering_orange_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "combined-worldgen:flowering_orange_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hedges:flowering_citrus_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_flowering_orange_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hedges:flowering_citrus_hedge"
+    ]
+  }
+}

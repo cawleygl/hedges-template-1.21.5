@@ -4,7 +4,7 @@
   "group": "hedge",
   "key": {
     "#": "minecraft:stick",
-    "W": "minecraft:spruce_leaves"
+    "W": "combined-worldgen:spruce_leaves"
   },
   "pattern": [
     "W#W",

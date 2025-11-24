@@ -3,7 +3,7 @@ package bluesteel42.hedges.block;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.AbstractBlock;
-import net.minecraft.particle.EntityEffectParticleEffect;
+import net.minecraft.particle.TintedParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.particle.ParticleUtil;
 import net.minecraft.util.dynamic.Codecs;
@@ -28,7 +28,7 @@ public class TintedParticleHedgeBlock extends HedgeBlock {
 
     @Override
     protected void spawnLeafParticle(World world, BlockPos pos, Random random) {
-        EntityEffectParticleEffect entityEffectParticleEffect = EntityEffectParticleEffect.create(ParticleTypes.TINTED_LEAVES, world.getBlockColor(pos));
+        TintedParticleEffect entityEffectParticleEffect = TintedParticleEffect.create(ParticleTypes.TINTED_LEAVES, world.getBlockColor(pos));
         ParticleUtil.spawnParticle(world, pos, random, entityEffectParticleEffect);
     }
 

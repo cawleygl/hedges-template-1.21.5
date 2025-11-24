@@ -1,0 +1,7 @@
+{
+  "parent": "hedges:block/template_hedge_post_overlay",
+  "textures": {
+    "overlay": "combined-worldgen:block/flowering_orange_leaves_overlay_0",
+    "wall": "combined-worldgen:block/citrus_leaves"
+  }
+}

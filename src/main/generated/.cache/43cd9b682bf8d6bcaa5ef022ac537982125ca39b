@@ -1,0 +1,19 @@
+// 1.21.10	-999999999-01-01T00:00:00	Hedges/hedges recipes
+52d0e8b681b8f516ef7c0ae6e115833ed7e9b8b8 data/hedges/advancement/recipes/misc/acacia_hedge.json
+cea7a35b9b3232c65bfb26a04e9ee017ace48170 data/hedges/advancement/recipes/misc/azalea_hedge.json
+072ae5291faabfab23bd2afdc3bdf7d3dbb91205 data/hedges/advancement/recipes/misc/birch_hedge.json
+2b296f2235e7f8c5631bc9da4acfd34de911c06b data/hedges/advancement/recipes/misc/cherry_hedge.json
+5239caf5e4200e4f56b6e29a943611171313d924 data/hedges/advancement/recipes/misc/dark_oak_hedge.json
+37d18fc209133f9e2a548d99ea9e245e57cbbe84 data/hedges/advancement/recipes/misc/flowering_azalea_hedge.json
+8d0320cc03b572d83c5fd38e6af6b30265f6c957 data/hedges/advancement/recipes/misc/mangrove_hedge.json
+5b67ddb4081e36be40171356d8ecfec34dfb0604 data/hedges/advancement/recipes/misc/oak_hedge.json
+b6e5b85bb3fc282c2e4826f5a648401ac5135f18 data/hedges/advancement/recipes/misc/pale_oak_hedge.json
+04f1599f62b207480e467e6e5b3c22c2d1277618 data/hedges/recipe/acacia_hedge.json
+68e839108b4c5fbc4e5bbb6abcae1af87f10c834 data/hedges/recipe/azalea_hedge.json
+5e2eceaaa15308ed5f333d613bf54074ad950696 data/hedges/recipe/birch_hedge.json
+7688a658f477ab62e89ae13e60f079b5ace365f4 data/hedges/recipe/cherry_hedge.json
+22e5aa3c84f6a5f9e525f4d415d1e4e171d950b8 data/hedges/recipe/dark_oak_hedge.json
+a22cbf898e331edfec9d449d1fb92df77ed01a10 data/hedges/recipe/flowering_azalea_hedge.json
+71a5b449aff47ea659b41911727b92cf3f1515d6 data/hedges/recipe/mangrove_hedge.json
+9b0c47fafa1e2d89c2eb4eff1fafe90a7d5dd2d1 data/hedges/recipe/oak_hedge.json
+b7ce250099baaa7edda015346dbc91ab9d191faa data/hedges/recipe/pale_oak_hedge.json

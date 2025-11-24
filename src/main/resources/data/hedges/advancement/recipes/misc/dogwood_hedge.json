@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dogwood_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "combined-worldgen:dogwood_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hedges:dogwood_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dogwood_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hedges:dogwood_hedge"
+    ]
+  }
+}

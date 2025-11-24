@@ -16,24 +16,46 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.OAK_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.SPRUCE_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.BIRCH_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.JUNGLE_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.ACACIA_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.DARK_OAK_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.MANGROVE_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.CHERRY_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.PALE_OAK_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.PINE_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.SWAMP_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.AZALEA_HEDGE.asItem());
-        getOrCreateTagBuilder(ModTags.Items.HEDGES).add(ModBlocks.FLOWERING_AZALEA_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.OAK_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.GREEN_MAPLE_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.YELLOW_MAPLE_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.RED_MAPLE_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.MIXED_MAPLE_HEDGE.asItem());
+//        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.SPRUCE_HEDGE.asItem();
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.SPRUCE_HEDGE_FALLING_NEEDLES.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.SNOWY_SPRUCE_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.PINE_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.SNOWY_PINE_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.BIRCH_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.KAPOK_HEDGE.asItem());
+//        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.JUNGLE_HEDGE.asItem();
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.CACAO_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.CITRUS_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.FLOWERING_CITRUS_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.ACACIA_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.BAOBAB_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.DARK_OAK_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.WILLOW_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.DOGWOOD_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.MANGROVE_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.CHERRY_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.PALE_OAK_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.AZALEA_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.FLOWERING_AZALEA_HEDGE.asItem());
 
-        getOrCreateTagBuilder(ItemTags.BEE_FOOD).add(ModBlocks.CHERRY_HEDGE.asItem());
-        getOrCreateTagBuilder(ItemTags.FLOWERS).add(ModBlocks.CHERRY_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.AZALEA_HEDGE.asItem());
+        valueLookupBuilder(ModTags.Items.HEDGES).add(ModBlocks.FLOWERING_AZALEA_HEDGE.asItem());
 
-        getOrCreateTagBuilder(ItemTags.BEE_FOOD).add(ModBlocks.FLOWERING_AZALEA_HEDGE.asItem());
-        getOrCreateTagBuilder(ItemTags.FLOWERS).add(ModBlocks.FLOWERING_AZALEA_HEDGE.asItem());
+        valueLookupBuilder(ItemTags.BEE_FOOD).add(ModBlocks.CHERRY_HEDGE.asItem());
+        valueLookupBuilder(ItemTags.FLOWERS).add(ModBlocks.CHERRY_HEDGE.asItem());
+
+        valueLookupBuilder(ItemTags.BEE_FOOD).add(ModBlocks.DOGWOOD_HEDGE.asItem());
+        valueLookupBuilder(ItemTags.FLOWERS).add(ModBlocks.DOGWOOD_HEDGE.asItem());
+
+        valueLookupBuilder(ItemTags.BEE_FOOD).add(ModBlocks.FLOWERING_CITRUS_HEDGE.asItem());
+        valueLookupBuilder(ItemTags.FLOWERS).add(ModBlocks.FLOWERING_CITRUS_HEDGE.asItem());
+
+        valueLookupBuilder(ItemTags.BEE_FOOD).add(ModBlocks.FLOWERING_AZALEA_HEDGE.asItem());
+        valueLookupBuilder(ItemTags.FLOWERS).add(ModBlocks.FLOWERING_AZALEA_HEDGE.asItem());
     }
 }

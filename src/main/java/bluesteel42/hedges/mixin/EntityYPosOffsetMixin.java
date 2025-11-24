@@ -24,7 +24,7 @@ public class EntityYPosOffsetMixin {
 				cir.setReturnValue(blockPos);
 				cir.cancel();
 			} else {
-				BlockState blockState = thisObject.getWorld().getBlockState(blockPos);
+				BlockState blockState = thisObject.getEntityWorld().getBlockState(blockPos);
 				cir.setReturnValue((!(offset <= 0.5) || !blockState.isIn(BlockTags.FENCES)) && !blockState.isIn(BlockTags.WALLS) && !blockState.isIn(ModTags.Blocks.HEDGES) && !(blockState.getBlock() instanceof FenceGateBlock)
 						? blockPos.withY(MathHelper.floor(posAccessor.getPos().y - offset))
 						: blockPos);

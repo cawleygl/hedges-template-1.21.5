@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "hedges:block/baobab_hedge_inventory",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -9604319
+      }
+    ]
+  }
+}

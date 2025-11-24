@@ -1,6 +1,8 @@
 {
   "values": [
     "hedges:cherry_hedge",
+    "hedges:dogwood_hedge",
+    "hedges:flowering_citrus_hedge",
     "hedges:flowering_azalea_hedge"
   ]
 }

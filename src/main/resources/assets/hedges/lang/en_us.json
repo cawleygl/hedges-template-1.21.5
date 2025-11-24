@@ -1,8 +1,6 @@
 {
   "block.hedges.oak_hedge": "Oak Hedge",
-  "block.hedges.spruce_hedge": "Spruce Hedge",
   "block.hedges.birch_hedge": "Birch Hedge",
-  "block.hedges.jungle_hedge": "Jungle Hedge",
   "block.hedges.acacia_hedge": "Acacia Hedge",
   "block.hedges.dark_oak_hedge": "Dark Oak Hedge",
   "block.hedges.mangrove_hedge": "Mangrove Hedge",
@@ -10,6 +8,20 @@
   "block.hedges.pale_oak_hedge": "Pale Oak Hedge",
   "block.hedges.azalea_hedge": "Azalea Hedge",
   "block.hedges.flowering_azalea_hedge": "Flowering Azalea Hedge",
-  "block.hedges.swamp_hedge": "Swamp Hedge",
-  "block.hedges.pine_hedge": "Pine Hedge"
+
+  "block.hedges.baobab_hedge": "Baobab Hedge",
+  "block.hedges.citrus_hedge": "Citrus Hedge",
+  "block.hedges.flowering_citrus_hedge": "Flowering Citrus Hedge",
+  "block.hedges.dogwood_hedge": "Dogwood Hedge",
+  "block.hedges.kapok_hedge": "Kapok Hedge",
+  "block.hedges.cacao_hedge": "Cacao Hedge",
+  "block.hedges.green_maple_hedge": "Green Maple Hedge",
+  "block.hedges.yellow_maple_hedge": "Yellow Maple Hedge",
+  "block.hedges.red_maple_hedge": "Red Maple Hedge",
+  "block.hedges.mixed_maple_hedge": "Mixed Maple Hedge",
+  "block.hedges.pine_hedge": "Pine Hedge",
+  "block.hedges.snowy_pine_hedge": "Snowy Pine Hedge",
+  "block.hedges.spruce_hedge": "Spruce Hedge",
+  "block.hedges.snowy_spruce_hedge": "Snowy Spruce Hedge",
+  "block.hedges.willow_hedge": "Willow Hedge"
 }
