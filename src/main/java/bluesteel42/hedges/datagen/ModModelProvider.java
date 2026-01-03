@@ -118,8 +118,8 @@ public class ModModelProvider extends FabricModelProvider {
         registerUntintedHedge(blockStateModelGenerator, ModBlocks.SNOWY_SPRUCE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(PineWoodModBlocks.SNOWY_SPRUCE_LEAVES)));
         registerTintedHedge(blockStateModelGenerator, ModBlocks.WILLOW_HEDGE, new TextureMap().put(TextureKey.WALL, getId(WillowWoodModBlocks.MOD_LEAVES)), FoliageColors.MANGROVE);
 
-        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.MIXED_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(MapleWoodModBlocks.MIXED_MAPLE_LEAVES)).put(OVERLAY, getSubId(MapleWoodModBlocks.MIXED_MAPLE_LEAVES, "_overlay")), FoliageColors.DEFAULT);
-        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.FLOWERING_CITRUS_HEDGE, new TextureMap().put(TextureKey.WALL, getId(CitrusWoodModBlocks.FLOWERING_ORANGE_LEAVES)).put(OVERLAY, getSubId(CitrusWoodModBlocks.FLOWERING_ORANGE_LEAVES, "_overlay_0")), FoliageColors.DEFAULT);
+        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.MIXED_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(MapleWoodModBlocks.MOD_LEAVES)).put(OVERLAY, getSubId(MapleWoodModBlocks.MIXED_MAPLE_LEAVES, "_overlay")), FoliageColors.DEFAULT);
+        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.FLOWERING_CITRUS_HEDGE, new TextureMap().put(TextureKey.WALL, getId(CitrusWoodModBlocks.MOD_LEAVES)).put(OVERLAY, getSubId(CitrusWoodModBlocks.FLOWERING_ORANGE_LEAVES, "_overlay_0")), FoliageColors.DEFAULT);
     }
 
     @Override
