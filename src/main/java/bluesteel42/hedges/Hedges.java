@@ -1,7 +1,6 @@
 package bluesteel42.hedges;
 
 import bluesteel42.hedges.block.ModBlocks;
-import bluesteel42.hedges.particle.ModParticles;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,7 +20,6 @@ public class Hedges implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModBlocks.initialize();
-		ModParticles.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

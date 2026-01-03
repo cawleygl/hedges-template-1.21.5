@@ -1,14 +1,14 @@
 package bluesteel42.hedges.block;
 
+import bluesteel42.combinedworldgen.wood.dogwood.particle.DogwoodWoodModParticles;
+import bluesteel42.combinedworldgen.wood.maple.particle.MapleWoodModParticles;
+import bluesteel42.combinedworldgen.wood.pine.particle.PineWoodModParticles;
 import bluesteel42.hedges.Hedges;
-import bluesteel42.hedges.particle.ModParticles;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.client.render.BlockRenderLayer;
-import net.minecraft.data.family.BlockFamilies;
-import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleTypes;
@@ -38,7 +38,7 @@ public class ModBlocks {
     public static final Block CITRUS_HEDGE = register("citrus_hedge", settings -> new TintedParticleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
     public static final Block FLOWERING_CITRUS_HEDGE = register("flowering_citrus_hedge", settings -> new TintedParticleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
 
-    public static final Block DOGWOOD_HEDGE = register("dogwood_hedge", settings -> new UntintedParticleHedgeBlock(0.1F, ModParticles.DOGWOOD_LEAVES, settings),
+    public static final Block DOGWOOD_HEDGE = register("dogwood_hedge", settings -> new UntintedParticleHedgeBlock(0.1F, DogwoodWoodModParticles.DOGWOOD_LEAVES, settings),
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.WHITE)
                     .strength(0.2F)
@@ -55,11 +55,11 @@ public class ModBlocks {
     public static final Block KAPOK_HEDGE = register("kapok_hedge", settings -> new TintedParticleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
     public static final Block CACAO_HEDGE = register("cacao_hedge", settings -> new TintedParticleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
     public static final Block GREEN_MAPLE_HEDGE = register("green_maple_hedge", settings -> new TintedParticleMapleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
-    public static final Block YELLOW_MAPLE_HEDGE = register("yellow_maple_hedge", settings -> new UntintedParticleHedgeBlock(0.01F, ModParticles.YELLOW_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
-    public static final Block RED_MAPLE_HEDGE = register("red_maple_hedge", settings -> new UntintedParticleHedgeBlock(0.01F, ModParticles.RED_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
-    public static final Block MIXED_MAPLE_HEDGE = register("mixed_maple_hedge", settings -> new MixedParticleMapleHedgeBlock(0.01F, ModParticles.RED_MAPLE_LEAVES, ModParticles.YELLOW_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
+    public static final Block YELLOW_MAPLE_HEDGE = register("yellow_maple_hedge", settings -> new UntintedParticleHedgeBlock(0.01F, MapleWoodModParticles.YELLOW_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
+    public static final Block RED_MAPLE_HEDGE = register("red_maple_hedge", settings -> new UntintedParticleHedgeBlock(0.01F, MapleWoodModParticles.RED_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
+    public static final Block MIXED_MAPLE_HEDGE = register("mixed_maple_hedge", settings -> new MixedParticleMapleHedgeBlock(0.01F, MapleWoodModParticles.RED_MAPLE_LEAVES, MapleWoodModParticles.YELLOW_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
     public static final Block PINE_HEDGE = register("pine_hedge", settings -> new TintedParticlePineNeedleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
-    public static final Block SNOWY_PINE_HEDGE = register("snowy_pine_hedge", settings -> new SnowyPineHedgeBlock(0.01F, ModParticles.SNOWY_PINE_NEEDLES, settings),
+    public static final Block SNOWY_PINE_HEDGE = register("snowy_pine_hedge", settings -> new SnowyPineHedgeBlock(0.01F, PineWoodModParticles.SNOWY_PINE_NEEDLES, settings),
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.WHITE)
                     .strength(0.2F)
@@ -74,7 +74,7 @@ public class ModBlocks {
                     .solidBlock(Blocks::never), true, true);
     public static final Block SPRUCE_HEDGE_FALLING_NEEDLES = register("spruce_hedge", settings -> new TintedParticleSpruceNeedleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
 
-    public static final Block SNOWY_SPRUCE_HEDGE = register("snowy_spruce_hedge", settings -> new SnowySpruceHedgeBlock(0.01F, ModParticles.SNOWY_SPRUCE_NEEDLES, settings),
+    public static final Block SNOWY_SPRUCE_HEDGE = register("snowy_spruce_hedge", settings -> new SnowySpruceHedgeBlock(0.01F, PineWoodModParticles.SNOWY_SPRUCE_NEEDLES, settings),
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.WHITE)
                     .strength(0.2F)

@@ -1,6 +1,6 @@
 package bluesteel42.hedges.block;
 
-import bluesteel42.hedges.particle.ModParticles;
+import bluesteel42.combinedworldgen.wood.pine.particle.PineWoodModParticles;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.particle.ParticleUtil;
@@ -27,7 +27,7 @@ public class TintedParticlePineNeedleHedgeBlock extends HedgeBlock {
 
     @Override
     protected void spawnLeafParticle(World world, BlockPos pos, Random random) {
-        TintedParticleEffect entityEffectParticleEffect = TintedParticleEffect.create(ModParticles.PINE_NEEDLES, world.getBlockColor(pos));
+        TintedParticleEffect entityEffectParticleEffect = TintedParticleEffect.create(PineWoodModParticles.PINE_NEEDLES, world.getBlockColor(pos));
         ParticleUtil.spawnParticle(world, pos, random, entityEffectParticleEffect);
     }
 

@@ -1,6 +1,6 @@
 package bluesteel42.hedges.block;
 
-import bluesteel42.hedges.particle.ModParticles;
+import bluesteel42.combinedworldgen.wood.maple.particle.MapleWoodModParticles;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.particle.ParticleEffect;
@@ -43,7 +43,7 @@ public class MixedParticleMapleHedgeBlock extends HedgeBlock {
                 ParticleUtil.spawnParticle(world, pos, random, this.yellowLeafParticleEffect);
                 break;
             default:
-                TintedParticleEffect entityEffectParticleEffect = TintedParticleEffect.create(ModParticles.GREEN_MAPLE_LEAVES, world.getBlockColor(pos));
+                TintedParticleEffect entityEffectParticleEffect = TintedParticleEffect.create(MapleWoodModParticles.GREEN_MAPLE_LEAVES, world.getBlockColor(pos));
                 ParticleUtil.spawnParticle(world, pos, random, entityEffectParticleEffect);
                 break;
         }
