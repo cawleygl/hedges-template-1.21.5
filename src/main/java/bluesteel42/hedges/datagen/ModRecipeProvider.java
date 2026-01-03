@@ -1,7 +1,14 @@
 package bluesteel42.hedges.datagen;
 
+import bluesteel42.combinedworldgen.wood.maple.block.MapleWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.pine.block.PineWoodModBlocks;
 import bluesteel42.hedges.Hedges;
 import bluesteel42.hedges.block.ModBlocks;
+import bluesteel42.combinedworldgen.wood.baobab.block.BaobabWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.willow.block.WillowWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.citrus.block.CitrusWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.dogwood.block.DogwoodWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.kapok.block.KapokWoodModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
@@ -47,21 +54,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 generateHedgeRecipe(ModBlocks.AZALEA_HEDGE, Blocks.AZALEA_LEAVES);
                 generateHedgeRecipe(ModBlocks.FLOWERING_AZALEA_HEDGE, Blocks.FLOWERING_AZALEA_LEAVES);
 
-//                generateHedgeRecipe(ModBlocks.SPRUCE_HEDGE_FALLING_NEEDLES, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.GREEN_MAPLE_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.YELLOW_MAPLE_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.RED_MAPLE_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.MIXED_MAPLE_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.SNOWY_SPRUCE_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.PINE_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.SNOWY_PINE_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.KAPOK_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.CACAO_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.CITRUS_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.FLOWERING_CITRUS_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.BAOBAB_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.WILLOW_HEDGE, Blocks.OAK_LEAVES);
-//                generateHedgeRecipe(ModBlocks.DOGWOOD_HEDGE, Blocks.OAK_LEAVES);
+                generateHedgeRecipe(ModBlocks.SPRUCE_HEDGE_FALLING_NEEDLES, PineWoodModBlocks.SPRUCE_LEAVES_FALLING_NEEDLES);
+                generateHedgeRecipe(ModBlocks.GREEN_MAPLE_HEDGE, MapleWoodModBlocks.MOD_LEAVES);
+                generateHedgeRecipe(ModBlocks.YELLOW_MAPLE_HEDGE, MapleWoodModBlocks.YELLOW_MAPLE_LEAVES);
+                generateHedgeRecipe(ModBlocks.RED_MAPLE_HEDGE, MapleWoodModBlocks.RED_MAPLE_LEAVES);
+                generateHedgeRecipe(ModBlocks.MIXED_MAPLE_HEDGE, MapleWoodModBlocks.MIXED_MAPLE_LEAVES);
+                generateHedgeRecipe(ModBlocks.SNOWY_SPRUCE_HEDGE, PineWoodModBlocks.SNOWY_SPRUCE_LEAVES);
+                generateHedgeRecipe(ModBlocks.PINE_HEDGE, PineWoodModBlocks.MOD_LEAVES);
+                generateHedgeRecipe(ModBlocks.SNOWY_PINE_HEDGE, PineWoodModBlocks.SNOWY_PINE_LEAVES);
+                generateHedgeRecipe(ModBlocks.KAPOK_HEDGE, KapokWoodModBlocks.MOD_LEAVES);
+                generateHedgeRecipe(ModBlocks.CACAO_HEDGE, KapokWoodModBlocks.CACAO_LEAVES);
+                generateHedgeRecipe(ModBlocks.CITRUS_HEDGE, CitrusWoodModBlocks.MOD_LEAVES);
+                generateHedgeRecipe(ModBlocks.FLOWERING_CITRUS_HEDGE, CitrusWoodModBlocks.FLOWERING_ORANGE_LEAVES);
+                generateHedgeRecipe(ModBlocks.BAOBAB_HEDGE, BaobabWoodModBlocks.MOD_LEAVES);
+                generateHedgeRecipe(ModBlocks.WILLOW_HEDGE, WillowWoodModBlocks.MOD_LEAVES);
+                generateHedgeRecipe(ModBlocks.DOGWOOD_HEDGE, DogwoodWoodModBlocks.MOD_LEAVES);
             }
         };
     }

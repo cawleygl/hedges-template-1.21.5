@@ -1,5 +1,12 @@
 package bluesteel42.hedges.datagen;
 
+import bluesteel42.combinedworldgen.wood.baobab.block.BaobabWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.citrus.block.CitrusWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.dogwood.block.DogwoodWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.kapok.block.KapokWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.maple.block.MapleWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.pine.block.PineWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.willow.block.WillowWoodModBlocks;
 import bluesteel42.hedges.Hedges;
 import bluesteel42.hedges.block.ModBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
@@ -97,24 +104,22 @@ public class ModModelProvider extends FabricModelProvider {
         registerUntintedHedge(blockStateModelGenerator, ModBlocks.AZALEA_HEDGE, new TextureMap().put(TextureKey.WALL, getId(Blocks.AZALEA_LEAVES)));
         registerUntintedHedge(blockStateModelGenerator, ModBlocks.FLOWERING_AZALEA_HEDGE, new TextureMap().put(TextureKey.WALL, getId(Blocks.FLOWERING_AZALEA_LEAVES)));
 
-        String combinedWorldgenID = "combined-worldgen";
-        String blockPath = "block/";
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.BAOBAB_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "baobab_leaves")), ColorHelper.getArgb(109, 115, 33));
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.CITRUS_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "citrus_leaves")), FoliageColors.DEFAULT);
-        registerUntintedHedge(blockStateModelGenerator, ModBlocks.DOGWOOD_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "dogwood_leaves")));
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.KAPOK_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "kapok_leaves")), FoliageColors.DEFAULT);
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.CACAO_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "cacao_leaves")), FoliageColors.DEFAULT);
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.GREEN_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "maple_leaves")), FoliageColors.DEFAULT);
-        registerUntintedHedge(blockStateModelGenerator, ModBlocks.YELLOW_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "yellow_maple_leaves")));
-        registerUntintedHedge(blockStateModelGenerator, ModBlocks.RED_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "red_maple_leaves")));
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.PINE_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "pine_leaves")), FoliageColors.DEFAULT);
-        registerUntintedHedge(blockStateModelGenerator, ModBlocks.SNOWY_PINE_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "snowy_pine_leaves")));
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.SPRUCE_HEDGE_FALLING_NEEDLES, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "spruce_leaves")), FoliageColors.SPRUCE);
-        registerUntintedHedge(blockStateModelGenerator, ModBlocks.SNOWY_SPRUCE_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "snowy_spruce_leaves")));
-        registerTintedHedge(blockStateModelGenerator, ModBlocks.WILLOW_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "willow_leaves")), FoliageColors.MANGROVE);
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.BAOBAB_HEDGE, new TextureMap().put(TextureKey.WALL, getId(BaobabWoodModBlocks.MOD_LEAVES)), ColorHelper.getArgb(109, 115, 33));
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.CITRUS_HEDGE, new TextureMap().put(TextureKey.WALL, getId(CitrusWoodModBlocks.MOD_LEAVES)), FoliageColors.DEFAULT);
+        registerUntintedHedge(blockStateModelGenerator, ModBlocks.DOGWOOD_HEDGE, new TextureMap().put(TextureKey.WALL, getId(DogwoodWoodModBlocks.MOD_LEAVES)));
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.KAPOK_HEDGE, new TextureMap().put(TextureKey.WALL, getId(KapokWoodModBlocks.MOD_LEAVES)), FoliageColors.DEFAULT);
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.CACAO_HEDGE, new TextureMap().put(TextureKey.WALL, getId(KapokWoodModBlocks.CACAO_LEAVES)), FoliageColors.DEFAULT);
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.GREEN_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(MapleWoodModBlocks.MOD_LEAVES)), FoliageColors.DEFAULT);
+        registerUntintedHedge(blockStateModelGenerator, ModBlocks.YELLOW_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(MapleWoodModBlocks.YELLOW_MAPLE_LEAVES)));
+        registerUntintedHedge(blockStateModelGenerator, ModBlocks.RED_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(MapleWoodModBlocks.RED_MAPLE_LEAVES)));
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.PINE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(PineWoodModBlocks.MOD_LEAVES)), FoliageColors.DEFAULT);
+        registerUntintedHedge(blockStateModelGenerator, ModBlocks.SNOWY_PINE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(PineWoodModBlocks.SNOWY_PINE_LEAVES)));
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.SPRUCE_HEDGE_FALLING_NEEDLES, new TextureMap().put(TextureKey.WALL, getId(PineWoodModBlocks.SPRUCE_LEAVES_FALLING_NEEDLES)), FoliageColors.SPRUCE);
+        registerUntintedHedge(blockStateModelGenerator, ModBlocks.SNOWY_SPRUCE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(PineWoodModBlocks.SNOWY_SPRUCE_LEAVES)));
+        registerTintedHedge(blockStateModelGenerator, ModBlocks.WILLOW_HEDGE, new TextureMap().put(TextureKey.WALL, getId(WillowWoodModBlocks.MOD_LEAVES)), FoliageColors.MANGROVE);
 
-        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.MIXED_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "maple_leaves")).put(OVERLAY, Identifier.of(combinedWorldgenID, blockPath + "mixed_maple_leaves_overlay")), FoliageColors.DEFAULT);
-        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.FLOWERING_CITRUS_HEDGE, new TextureMap().put(TextureKey.WALL, Identifier.of(combinedWorldgenID, blockPath + "citrus_leaves")).put(OVERLAY, Identifier.of(combinedWorldgenID, blockPath + "flowering_orange_leaves_overlay_0")), FoliageColors.DEFAULT);
+        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.MIXED_MAPLE_HEDGE, new TextureMap().put(TextureKey.WALL, getId(MapleWoodModBlocks.MIXED_MAPLE_LEAVES)).put(OVERLAY, getSubId(MapleWoodModBlocks.MIXED_MAPLE_LEAVES, "_overlay")), FoliageColors.DEFAULT);
+        registerTintedHedgeWithOverlay(blockStateModelGenerator, ModBlocks.FLOWERING_CITRUS_HEDGE, new TextureMap().put(TextureKey.WALL, getId(CitrusWoodModBlocks.FLOWERING_ORANGE_LEAVES)).put(OVERLAY, getSubId(CitrusWoodModBlocks.FLOWERING_ORANGE_LEAVES, "_overlay_0")), FoliageColors.DEFAULT);
     }
 
     @Override

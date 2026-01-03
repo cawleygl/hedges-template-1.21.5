@@ -1,6 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hedges:willow_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
     "has_willow_leaves": {
       "conditions": {
         "items": [
@@ -10,12 +16,6 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "hedges:willow_hedge"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
