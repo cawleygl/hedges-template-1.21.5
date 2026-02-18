@@ -59,7 +59,7 @@ public class ModBlocks {
     public static final Block RED_MAPLE_HEDGE = register("red_maple_hedge", settings -> new UntintedParticleHedgeBlock(0.01F, MapleWoodModParticles.RED_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
     public static final Block MIXED_MAPLE_HEDGE = register("mixed_maple_hedge", settings -> new MixedParticleMapleHedgeBlock(0.01F, MapleWoodModParticles.RED_MAPLE_LEAVES, MapleWoodModParticles.YELLOW_MAPLE_LEAVES, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
     public static final Block PINE_HEDGE = register("pine_hedge", settings -> new TintedParticlePineNeedleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
-    public static final Block SNOWY_PINE_HEDGE = register("snowy_pine_hedge", settings -> new SnowyPineHedgeBlock(0.01F, PineWoodModParticles.SNOWY_PINE_NEEDLES, settings),
+    public static final Block SNOWY_PINE_HEDGE = register("snowy_pine_hedge", settings -> new SnowyHedgeBlock(0.01F, PineWoodModParticles.SNOWY_PINE_NEEDLES, settings, PINE_HEDGE),
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.WHITE)
                     .strength(0.2F)
@@ -74,7 +74,7 @@ public class ModBlocks {
                     .solidBlock(Blocks::never), true, true);
     public static final Block SPRUCE_HEDGE_FALLING_NEEDLES = register("spruce_hedge", settings -> new TintedParticleSpruceNeedleHedgeBlock(0.01F, settings), Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true);
 
-    public static final Block SNOWY_SPRUCE_HEDGE = register("snowy_spruce_hedge", settings -> new SnowySpruceHedgeBlock(0.01F, PineWoodModParticles.SNOWY_SPRUCE_NEEDLES, settings),
+    public static final Block SNOWY_SPRUCE_HEDGE = register("snowy_spruce_hedge", settings -> new SnowyHedgeBlock(0.01F, PineWoodModParticles.SNOWY_SPRUCE_NEEDLES, settings, SPRUCE_HEDGE_FALLING_NEEDLES),
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.WHITE)
                     .strength(0.2F)

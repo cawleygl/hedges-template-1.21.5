@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "hedges:snowy_spruce_hedge"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hedges:spruce_hedge"
+  }
+}

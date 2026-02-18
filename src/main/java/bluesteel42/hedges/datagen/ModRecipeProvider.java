@@ -1,5 +1,6 @@
 package bluesteel42.hedges.datagen;
 
+import bluesteel42.combinedworldgen.wood.cacao.block.CacaoWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.maple.block.MapleWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.pine.block.PineWoodModBlocks;
 import bluesteel42.hedges.Hedges;
@@ -39,6 +40,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(leaves), conditionsFromItem(leaves))
                         .offerTo(exporter);
             }
+            private void offerSnowyBlockRecipes(ItemConvertible baseBlock, ItemConvertible snowyBlock) {
+                createShapeless(RecipeCategory.MISC, snowyBlock, 1)
+                        .input(baseBlock)
+                        .input(Items.SNOWBALL)
+                        .criterion(hasItem(snowyBlock), conditionsFromItem(snowyBlock))
+                        .offerTo(exporter, getItemPath(snowyBlock) + "_from_" + getItemPath(baseBlock));
+                createShapeless(RecipeCategory.MISC, baseBlock, 1)
+                        .input(snowyBlock)
+                        .criterion(hasItem(snowyBlock), conditionsFromItem(snowyBlock))
+                        .offerTo(exporter, getItemPath(baseBlock) + "_from_" + getItemPath(snowyBlock));
+            }
 
             @Override
             public void generate() {
@@ -63,12 +75,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 generateHedgeRecipe(ModBlocks.PINE_HEDGE, PineWoodModBlocks.MOD_LEAVES);
                 generateHedgeRecipe(ModBlocks.SNOWY_PINE_HEDGE, PineWoodModBlocks.SNOWY_PINE_LEAVES);
                 generateHedgeRecipe(ModBlocks.KAPOK_HEDGE, KapokWoodModBlocks.MOD_LEAVES);
-                generateHedgeRecipe(ModBlocks.CACAO_HEDGE, KapokWoodModBlocks.CACAO_LEAVES);
+                generateHedgeRecipe(ModBlocks.CACAO_HEDGE, CacaoWoodModBlocks.MOD_LEAVES);
                 generateHedgeRecipe(ModBlocks.CITRUS_HEDGE, CitrusWoodModBlocks.MOD_LEAVES);
                 generateHedgeRecipe(ModBlocks.FLOWERING_CITRUS_HEDGE, CitrusWoodModBlocks.FLOWERING_ORANGE_LEAVES);
                 generateHedgeRecipe(ModBlocks.BAOBAB_HEDGE, BaobabWoodModBlocks.MOD_LEAVES);
                 generateHedgeRecipe(ModBlocks.WILLOW_HEDGE, WillowWoodModBlocks.MOD_LEAVES);
                 generateHedgeRecipe(ModBlocks.DOGWOOD_HEDGE, DogwoodWoodModBlocks.MOD_LEAVES);
+
+                offerSnowyBlockRecipes(ModBlocks.PINE_HEDGE, ModBlocks.SNOWY_PINE_HEDGE);
+                offerSnowyBlockRecipes(ModBlocks.SPRUCE_HEDGE_FALLING_NEEDLES, ModBlocks.SNOWY_SPRUCE_HEDGE);
+
             }
         };
     }

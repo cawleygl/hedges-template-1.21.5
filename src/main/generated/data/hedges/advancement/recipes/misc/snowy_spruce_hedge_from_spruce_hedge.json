@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_snowy_spruce_hedge": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hedges:snowy_spruce_hedge"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hedges:snowy_spruce_hedge_from_spruce_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_snowy_spruce_hedge"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hedges:snowy_spruce_hedge_from_spruce_hedge"
+    ]
+  }
+}
